@@ -1,0 +1,7 @@
+<br><br><br>
+<label>Assignment-1</label>
+<br><br>
+<input type="text" placeholder="Pleae Enter Username" [(ngModel)] = "title" >
+<br><br><br>
+<button class = "btn btn-primary" (click) = "resetButton()" [disabled] = "title === ''" >reset</button>
+<p [innerText] = "title"></p>

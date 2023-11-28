@@ -1,0 +1,10 @@
+
+<label>Assignment-2</label>
+<br><br>
+<button class="btn btn-primary" (click)="paraghToggle()">DISPLAY ITEMS</button>
+<p *ngIf = toggleParagh>Secret Password = tuna</p>
+<ul  *ngFor="let act of data; let i = index">
+    <li [ngStyle] = "{backgroundColor : i > 5 ? 'red' : ''}" [ngClass]= "{re : i <= 5 }">
+        This is {{i}} on {{act}}
+    </li>
+</ul>
