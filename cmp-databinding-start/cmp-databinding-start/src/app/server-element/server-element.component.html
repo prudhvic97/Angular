@@ -1,0 +1,27 @@
+<!-- <div class="row">
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">{{ elements.name }}</div>
+            <div class="panel-body">
+                <p>
+                    <strong  style="color: red">{{ elements.content }}</strong>
+                    <em >{{ elements.content }}</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="row">
+    <div class="col-xs-12">
+      <div
+        class="panel panel-default">
+        <div class="panel-heading">{{ elements.name }}</div>
+        <div class="panel-body">
+          <p>
+            <strong *ngIf="elements.type === 'server'" style="color: red">{{ elements.content }}</strong>
+            <em *ngIf="elements.type === 'blueprint'">{{ elements.content }}</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
