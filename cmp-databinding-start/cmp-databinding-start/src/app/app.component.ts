@@ -25,4 +25,8 @@ export class AppComponent {
     })
     console.log(serverData)
 }
+
+toDestroy(){
+  this.serverElements.splice(0,1)
+}
 }

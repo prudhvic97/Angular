@@ -12,4 +12,9 @@ export class ShoppingListComponent {
     new Ingredient ('Tomato' , 10)
   ];
 
+newIngredient(ing:Ingredient){
+
+  this.ingredients.push(ing)
+}
+
 }
