@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-game-control (dataEven)="countEven($event)" (dataOdd)="countOdd($event)"></app-game-control>
+    <hr>
+    <app-even [count]="evenCount"></app-even>
+    <hr>
+    <app-odd [count]="oddCount"></app-odd>
+  </div>
+</div>
